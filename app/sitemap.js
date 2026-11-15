@@ -1,0 +1,2 @@
+import {site} from '@/data/content';
+export default function sitemap(){const base=process.env.NEXT_PUBLIC_SITE_URL||'https://example.com';return [{url:base,changeFrequency:'monthly',priority:1},...site.projects.map(p=>({url:`${base}/projects/${p.slug}`,changeFrequency:'monthly',priority:.7}))];}

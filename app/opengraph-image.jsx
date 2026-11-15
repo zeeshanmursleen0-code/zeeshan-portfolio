@@ -1,0 +1,3 @@
+import { ImageResponse } from 'next/og';
+export const size={width:1200,height:630}; export const contentType='image/png';
+export default function Image(){return new ImageResponse(<div style={{display:'flex',flexDirection:'column',justifyContent:'center',width:'100%',height:'100%',padding:80,background:'#080b14',color:'#f8fafc'}}><div style={{fontSize:30,color:'#a78bfa'}}>AI • SOFTWARE • AUTOMATION</div><div style={{fontSize:85,fontWeight:800,marginTop:35}}>Zeeshan Mursleen</div><div style={{fontSize:38,color:'#a8b3c7',marginTop:25}}>Engineering intelligent experiences.</div></div>,size);}
